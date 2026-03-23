@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "174328963248",
+    "project_id": "medalert-143",
+    "storage_bucket": "medalert-143.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174328963248:android:330202d5039d2dd7fddb75",
+        "android_client_info": {
+          "package_name": "com.medalert"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAHfGU4lEU3OM_L1KAwJCiZS33UO39gnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

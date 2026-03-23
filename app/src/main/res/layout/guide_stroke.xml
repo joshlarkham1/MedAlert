@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    android:padding="12dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noticing a Stroke"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Men and women who have strokes often feel similar symptoms, such as face drooping or weakness..."
+        android:textColor="#555555"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/link_stroke_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch on YouTube"
+        android:textColor="#1E88E5"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/link_stroke_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read More Articles"
+        android:textColor="#1E88E5"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>

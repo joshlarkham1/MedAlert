@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guide Title"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guide Description"
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/link_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch on YouTube"
+        android:textColor="#1E88E5"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/link_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read More Articles"
+        android:textColor="#1E88E5"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        android:clickable="true"
+        android:focusable="true" />
+</LinearLayout>

@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBE8E7"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_emergency_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_emergency"
+            android:contentDescription="Emergency Icon" />
+
+        <ImageButton
+            android:id="@+id/btn_user"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_user"
+            android:background="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="User Profile" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_below="@id/tv_welcome"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_sos"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/tv_user_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#FF0000"
+        android:text="SOS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_address_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_sos"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+
+        android:text="Current Address:\nAddress Line 1\nPostcode"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:gravity="start" />
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/nav_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_home"
+            android:backgroundTint="@android:color/transparent"
+            android:text="Symptom Checker"
+            android:textColor="#000"
+            android:gravity="center"
+            android:padding="8dp"
+            android:contentDescription="Navigate to Home" />
+
+        <Button
+            android:id="@+id/nav_book"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="Navigate to Guides"
+            android:drawableTop="@drawable/ic_book"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Health Guides"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/nav_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="Navigate to Phone"
+            android:drawableTop="@drawable/ic_phone"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Contact List"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/nav_map"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:contentDescription="Navigate to Map"
+            android:drawableTop="@drawable/ic_map"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="Map"
+            android:textColor="#000" />
+    </LinearLayout>
+</RelativeLayout>

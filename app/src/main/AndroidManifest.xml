@@ -1,0 +1,95 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.medalert">
+
+    <!-- Permissions -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- Location Permissions for Google Maps and Places API -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Add this for Coarse location -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- Google Maps and Places API Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Splash Screen -->
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Welcome Screen -->
+        <activity
+            android:name=".Activity.WelcomeActivity"
+            android:exported="false" />
+
+        <!-- Authentication -->
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SignupActivity"
+            android:exported="false" />
+
+        <!-- Main Home Screen -->
+        <activity
+            android:name=".Activity.NewHomeActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".Activity.SymptomCheckerActivity"
+            android:exported="true" />
+
+        <!-- Home Activity -->
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="true" />
+
+
+
+        <!-- Profile Page -->
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+
+        <!-- Medical Numbers Activity -->
+        <activity
+            android:name=".Activity.MedicalNumbersActivity"
+            android:exported="false" />
+
+        <!-- SOS Activity -->
+        <activity
+            android:name=".Activity.SOSActivity"
+            android:exported="false" />
+
+        <!-- Guides Activity -->
+        <activity
+            android:name=".Activity.GuidesActivity"
+            android:exported="false" />
+
+        <!-- Map Activity -->
+        <activity
+            android:name=".Activity.MapActivity"
+            android:exported="true" /> <!-- Set to "true" if you want to open this activity from other components -->
+
+        <!-- Add the API key for Google Maps from strings.xml -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="REMOVED" /> <!-- Use the API key from the strings.xml file -->
+
+    </application>
+</manifest>

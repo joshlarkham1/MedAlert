@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9E7E6">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_back"
+        android:background="@android:color/transparent"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="Back button" />
+
+    <TextView
+        android:id="@+id/tv_medical_numbers_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="UK Emergency Numbers"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <ListView
+        android:id="@+id/listViewNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_medical_numbers_title"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+</RelativeLayout>
