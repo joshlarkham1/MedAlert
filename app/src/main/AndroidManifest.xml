@@ -89,7 +89,7 @@
         <!-- Add the API key for Google Maps from strings.xml -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="REMOVED" /> <!-- Use the API key from the strings.xml file -->
+            android:value="${MAPS_API_KEY}" /> <!-- Use the API key from the strings.xml file -->
 
     </application>
 </manifest>

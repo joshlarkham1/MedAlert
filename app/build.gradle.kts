@@ -14,6 +14,8 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        manifestPlaceholders["MAPS_API_KEY"] = project.property("MAPS_API_KEY") as String
+        
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
